@@ -1,3 +1,5 @@
+Forked from [here](https://github.com/tribou/docker-changeip-updater) in order to build the container for ARM architectures.
+
 # ChangeIP DNS Updater
 
 Docker container to run DNS updates to a ChangeIP.com account
