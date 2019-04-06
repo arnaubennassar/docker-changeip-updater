@@ -1,9 +1,0 @@
----
-app:
-  build: .
-  volumes:
-    - ./assets:/usr/src/myapp
-  environment:
-    - CHANGEIP_USERNAME
-    - CHANGEIP_PASSWORD
-    - CHANGEIP_RECORD

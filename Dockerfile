@@ -1,9 +1,7 @@
-FROM ubuntu
-MAINTAINER tribou
-
+FROM armhf/alpine
 ENV TZ America/Chicago
-RUN apt-get update && apt-get install -y wget dnsutils && apt-get autoclean -y
+RUN apk update && apk add wget bind-tools  && rm -rf /var/cache/apk/*
 ADD assets /usr/src/myapp
 RUN chmod +x /usr/src/myapp/update-script.sh
 WORKDIR /usr/src/myapp
-CMD ["bash", "update-script.sh"]
+CMD ["/bin/sh", "update-script.sh"]
