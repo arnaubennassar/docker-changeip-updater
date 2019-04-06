@@ -1,7 +1,7 @@
-FROM armhf/alpine
+FROM arm32v7/debian:stretch-slim
 ENV TZ America/Chicago
-RUN apk update && apk add wget bind-tools  && rm -rf /var/cache/apk/*
+RUN apt-get update && apt-get install -y wget dnsutils && apt-get autoclean -y
 ADD assets /usr/src/myapp
 RUN chmod +x /usr/src/myapp/update-script.sh
 WORKDIR /usr/src/myapp
-CMD ["/bin/sh", "update-script.sh"]
+CMD ["bash", "update-script.sh"]
