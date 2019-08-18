@@ -1,5 +1,5 @@
 Forked from [here](https://github.com/tribou/docker-changeip-updater) in order to publish container images for multiple architectures: ARM, ARM64 and x86-64.
-
+Used [this guide](https://engineering.docker.com/2019/06/getting-started-with-docker-for-arm-on-linux/) to build the multi arch images
 # ChangeIP DNS Updater
 
 Docker container to run DNS updates to a ChangeIP.com account
