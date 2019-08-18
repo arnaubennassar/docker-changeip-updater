@@ -1,4 +1,4 @@
-Forked from [here](https://github.com/tribou/docker-changeip-updater) in order to build the container for ARM architectures.
+Forked from [here](https://github.com/tribou/docker-changeip-updater) in order to publish container images for multiple architectures: ARM, ARM64 and x86-64.
 
 # ChangeIP DNS Updater
 
