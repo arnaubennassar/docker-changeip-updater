@@ -1,4 +1,4 @@
-FROM arm32v7/debian:stretch-slim
+FROM debian:buster-slim
 ENV TZ America/Chicago
 RUN apt-get update && apt-get install -y wget dnsutils && apt-get autoclean -y
 ADD assets /usr/src/myapp
